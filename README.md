@@ -1,90 +1,79 @@
-# ShopLifters Detection Project
+# Deep Learning Assignment 1: Housing Price Prediction
 
-## A computer vision project aimed at detecting shoplifting behaviors from video data. This repository contains code for processing video frames and metadata, with plans to integrate a behavior classification model.
+This repository contains a Jupyter notebook that focuses on predicting housing prices using deep learning techniques. The notebook was developed as part of a deep learning assignment and includes various steps such as data preprocessing, model creation, training, and evaluation.
 
-### Table of Contents
+## Description
 
-	1.	Overview
-	2.	Features
-	3.	Dataset
-	4.	Installation
-	5.	Usage
-	6.	How It Works
-	7.	Future Work
-	8.	Contributing
+The **DeepLearning_Assignment1_Housing.ipynb** notebook demonstrates how to build and train a neural network model to predict housing prices. It walks through the entire workflow starting from data loading, exploration, and preprocessing, all the way through model design and evaluation. The objective is to predict house prices based on a variety of features such as square footage, number of bedrooms, location, and other relevant factors. 
 
-### Overview
+Key points covered:
+- Handling missing data
+- Feature scaling and normalization
+- Building a deep learning model using Keras/TensorFlow
+- Model performance evaluation using loss functions like Mean Squared Error (MSE)
+- Visualization of training history and prediction results
 
-The ShopLifters Detection Project is designed to analyze surveillance video footage to identify potential shoplifting incidents. Using frame-by-frame analysis and video metadata, the project aims to build an automated shoplifting detection system leveraging machine learning.
+## Dataset Overview
 
-Features
+### Features
 
-	•	Video Processing: Frame-by-frame extraction from videos for data analysis.
-	•	Metadata Collection: Extracts video properties such as resolution, frame count, and video duration.
-	•	Behavior Classification: A planned feature to detect shoplifting behavior using machine learning models.
+- **Price**: The target variable representing the price of the house (in currency).
+- **Area**: The total area of the house in square feet.
+- **Bedrooms**: The number of bedrooms in the house.
+- **Bathrooms**: The number of bathrooms in the house.
+- **Stories**: The number of stories (levels) in the house.
+- **Main Road**: A binary variable indicating whether the property is located on a main road (1 for yes, 0 for no).
+- **Guest Room**: A binary variable indicating the availability of a guest room (1 for yes, 0 for no).
+- **Basement**: A binary variable indicating whether the house has a basement (1 for yes, 0 for no).
+- **Hot Water Heating**: A binary variable indicating whether the house has hot water heating (1 for yes, 0 for no).
+- **Air Conditioning**: A binary variable indicating whether the house has air conditioning (1 for yes, 0 for no).
+- **Parking**: A binary variable indicating the availability of parking spaces (1 for yes, 0 for no).
+- **Preferred Area**: A binary variable indicating whether the house is located in a preferred area (1 for yes, 0 for no).
+- **Furnishing Status**: A categorical variable indicating the furnishing status of the house (e.g., furnished, semi-furnished, unfurnished).
 
-### Dataset
+### Dataset Size
 
-The project uses a dataset consisting of multiple .mp4 video files, with varying frame counts and resolutions. Here are the key attributes of the videos:
+The dataset contains a total of **545 records** (houses) and **12 features** (including the target variable). Each record corresponds to a specific house with its respective attributes.
+### File
+- **DeepLearning_Assignment1_Housing.ipynb**: This notebook implements a neural network model to predict housing prices based on features such as square footage, number of rooms, location, and more.
 
-	•	Resolution: 704x576 pixels.
-	•	Frame Count: Ranges from 175 to 475 frames per video.
-	•	File Format: Videos are stored in .mp4.
+### Key Sections:
+1. **Data Preprocessing**: Loading and cleaning the dataset, handling missing values, and feature scaling.
+2. **Model Building**: Creating a neural network model using Keras/TensorFlow (or relevant library).
+3. **Model Training**: Training the model using the dataset and fine-tuning hyperparameters.
+4. **Evaluation**: Measuring model performance using relevant metrics (e.g., MSE, MAE) and visualizing the results.
 
-Sample metadata from the dataset:
+## Prerequisites
 
-{
-  "file": "shop_lifter_n_0.mp4",
-  "frames": 450,
-  "width": 704,
-  "height": 576
-}
+Before running the notebook, make sure you have the following libraries installed:
 
-### Installation
+- Python 3.x
+- Jupyter Notebook
+- TensorFlow or Keras
+- Pandas
+- NumPy
+- Matplotlib (for visualization)
 
-To get started with the project, follow these steps:
+###You can install all required dependencies by running:
 
-	1.	Clone the repository:
+	pip install -r requirements.txt
 
-git clone www.github.com/MSoffar/ShopLifters--MobileNet-LSTM
+### 1. Clone the repository:
+	git clone https://github.com/your-username/DeepLearning-Housing-Prediction.git
 
-	2.	Navigate to the project directory:
+### 2. Navigate to the directory:
+   	cd DeepLearning-Housing-Prediction
 
-cd ShopLifters--MobileNet-LSTM
+### 3. Open the notebook:
+   	jupyter notebook DeepLearning_Assignment1_Housing.ipynb
 
+Run the cells in sequence to train the model and view the results.
 
-	3.	Install the required dependencies
-
-### Usage
-
-Once the dependencies are installed, you can run the video analysis script:
-
-python main.py
-
-This script will process the videos, extract metadata, and prepare the data for further analysis or model training.
-
-### How It Works
-
-	•	Frame Extraction: The videos are processed to extract individual frames for analysis.
-	•	Metadata Handling: Information such as frame count, resolution, and video duration are extracted from each video.
-	•	Machine Learning: (Work in progress) A model will be trained to identify shoplifting behaviors based on frame data and other features.
-
-### Future Work
-
-	•	Computer Vision Model: Develop and integrate a model for automatic shoplifting detection.
-	•	Performance Optimization: Improve the efficiency of video processing, particularly for larger datasets.
-	•	Dataset Expansion: Use a larger and more diverse dataset to improve the model’s accuracy.
+### Results
+	The notebook demonstrates how to build and train a neural network for housing price prediction. The performance of the model is evaluated based on the test dataset, and various plots are included to visualize the model's predictions versus actual values.
 
 ### Contributing
+		Feel free to fork this repository and create pull requests for any improvements, bug fixes, or new features.
 
-Contributions are welcome! If you’d like to contribute to the project, please follow these steps:
-
-	1.	Fork the repository.
-	2.	Create a new branch for your feature or bugfix.
-	3.	Commit your changes and push to your branch.
-	4.	Submit a pull request with a detailed explanation of your changes.
-Contributing
-Feel free to fork this repository and create pull requests for any improvements, bug fixes, or new features.
-
-License
-This project is licensed under the MIT License.
+### License
+		This project is licensed under the MIT License.
