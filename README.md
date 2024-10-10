@@ -54,7 +54,7 @@ Before running the notebook, make sure you have the following libraries installe
 - NumPy
 - Matplotlib (for visualization)
 
-###You can install all required dependencies by running:
+### You can install all required dependencies by running:
 
 	pip install -r requirements.txt
 
