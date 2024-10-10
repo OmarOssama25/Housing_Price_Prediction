@@ -1,4 +1,4 @@
-# Deep Learning Assignment 1: Housing Price Prediction
+# Housing Price Prediction
 
 This repository contains a Jupyter notebook that focuses on predicting housing prices using deep learning techniques. The notebook was developed as part of a deep learning assignment and includes various steps such as data preprocessing, model creation, training, and evaluation.
 
