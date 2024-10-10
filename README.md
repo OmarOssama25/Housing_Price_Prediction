@@ -73,7 +73,7 @@ Run the cells in sequence to train the model and view the results.
 	The notebook demonstrates how to build and train a neural network for housing price prediction. The performance of the model is evaluated based on the test dataset, and various plots are included to visualize the model's predictions versus actual values.
 
 ### Contributing
-		Feel free to fork this repository and create pull requests for any improvements, bug fixes, or new features.
+	Feel free to fork this repository and create pull requests for any improvements, bug fixes, or new features.
 
 ### License
-		This project is licensed under the MIT License.
+	This project is licensed under the MIT License.
