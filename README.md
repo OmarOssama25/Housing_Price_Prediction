@@ -1,65 +1,88 @@
-# Deep Learning Assignment 1: Housing Price Prediction
+# ShopLifters Detection Project
 
-This repository contains a Jupyter notebook that focuses on predicting housing prices using deep learning techniques. The notebook was developed as part of a deep learning assignment and includes various steps such as data preprocessing, model creation, training, and evaluation.
+## A computer vision project aimed at detecting shoplifting behaviors from video data. This repository contains code for processing video frames and metadata, with plans to integrate a behavior classification model.
 
-## Description
+### Table of Contents
 
-The **DeepLearning_Assignment1_Housing.ipynb** notebook demonstrates how to build and train a neural network model to predict housing prices. It walks through the entire workflow, starting from data loading, exploration, and preprocessing, all the way through model design, training, and evaluation. The objective is to predict house prices based on various features such as square footage, number of bedrooms, location, and other relevant factors.
+	1.	Overview
+	2.	Features
+	3.	Dataset
+	4.	Installation
+	5.	Usage
+	6.	How It Works
+	7.	Future Work
+	8.	Contributing
 
-### Key Points Covered:
-- **Data Loading**: Importing the housing dataset and exploring its structure.
-- **Data Preprocessing**: Handling missing data, scaling features, and transforming categorical variables.
-- **Model Building**: Creating a deep neural network using Keras/TensorFlow.
-- **Model Training**: Training the model with training data, adjusting hyperparameters like learning rate and epochs.
-- **Model Evaluation**: Using Mean Squared Error (MSE) and Mean Absolute Error (MAE) to measure the performance of the model.
-- **Visualization**: Plotting training history (loss curves) and comparing predicted vs. actual housing prices.
+### Overview
 
-## Notebook Overview
+The ShopLifters Detection Project is designed to analyze surveillance video footage to identify potential shoplifting incidents. Using frame-by-frame analysis and video metadata, the project aims to build an automated shoplifting detection system leveraging machine learning.
 
-### File
-- **DeepLearning_Assignment1_Housing.ipynb**: This notebook implements a neural network model to predict housing prices based on features such as square footage, number of rooms, location, and more.
+Features
 
-### Key Sections:
-1. **Data Preprocessing**: Loading and cleaning the dataset, handling missing values, and feature scaling.
-2. **Model Building**: Creating a neural network model using Keras/TensorFlow.
-3. **Model Training**: Training the model using the dataset and fine-tuning hyperparameters.
-4. **Evaluation**: Measuring model performance using relevant metrics (e.g., MSE, MAE) and visualizing the results.
+	•	Video Processing: Frame-by-frame extraction from videos for data analysis.
+	•	Metadata Collection: Extracts video properties such as resolution, frame count, and video duration.
+	•	Behavior Classification: A planned feature to detect shoplifting behavior using machine learning models.
 
-## Prerequisites
+### Dataset
 
-Before running the notebook, make sure you have the following libraries installed:
+The project uses a dataset consisting of multiple .mp4 video files, with varying frame counts and resolutions. Here are the key attributes of the videos:
 
-- Python 3.x
-- Jupyter Notebook
-- TensorFlow or Keras
-- Pandas
-- NumPy
-- Matplotlib (for visualization)
+	•	Resolution: 704x576 pixels.
+	•	Frame Count: Ranges from 175 to 475 frames per video.
+	•	File Format: Videos are stored in .mp4.
 
-You can install all required dependencies by running:
+Sample metadata from the dataset:
 
-```bash
-pip install -r requirements.txt
-exit
+{
+  "file": "shop_lifter_n_0.mp4",
+  "frames": 450,
+  "width": 704,
+  "height": 576
+}
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/DeepLearning-Housing-Prediction.git
+### Installation
 
-2. Navigate to the directory:
-   ```bash
-   cd DeepLearning-Housing-Prediction
+To get started with the project, follow these steps:
 
-3. Open the notebook:
-   ```bash
-   jupyter notebook DeepLearning_Assignment1_Housing.ipynb
+	1.	Clone the repository:
 
-Run the cells in sequence to train the model and view the results.
-```bash
+git clone www.github.com/MSoffar/ShopLifters--MobileNet-LSTM
 
-Results
-The notebook demonstrates how to build and train a neural network for housing price prediction. The performance of the model is evaluated based on the test dataset, and various plots are included to visualize the model's predictions versus actual values.
+	2.	Navigate to the project directory:
 
+cd ShopLifters--MobileNet-LSTM
+
+
+	3.	Install the required dependencies
+
+### Usage
+
+Once the dependencies are installed, you can run the video analysis script:
+
+python main.py
+
+This script will process the videos, extract metadata, and prepare the data for further analysis or model training.
+
+### How It Works
+
+	•	Frame Extraction: The videos are processed to extract individual frames for analysis.
+	•	Metadata Handling: Information such as frame count, resolution, and video duration are extracted from each video.
+	•	Machine Learning: (Work in progress) A model will be trained to identify shoplifting behaviors based on frame data and other features.
+
+### Future Work
+
+	•	Computer Vision Model: Develop and integrate a model for automatic shoplifting detection.
+	•	Performance Optimization: Improve the efficiency of video processing, particularly for larger datasets.
+	•	Dataset Expansion: Use a larger and more diverse dataset to improve the model’s accuracy.
+
+### Contributing
+
+Contributions are welcome! If you’d like to contribute to the project, please follow these steps:
+
+	1.	Fork the repository.
+	2.	Create a new branch for your feature or bugfix.
+	3.	Commit your changes and push to your branch.
+	4.	Submit a pull request with a detailed explanation of your changes.
 Contributing
 Feel free to fork this repository and create pull requests for any improvements, bug fixes, or new features.
 
