@@ -4,14 +4,15 @@ This repository contains a Jupyter notebook that focuses on predicting housing p
 
 ## Description
 
-The **DeepLearning_Assignment1_Housing.ipynb** notebook demonstrates how to build and train a neural network model to predict housing prices. It walks through the entire workflow starting from data loading, exploration, and preprocessing, all the way through model design and evaluation. The objective is to predict house prices based on a variety of features such as square footage, number of bedrooms, location, and other relevant factors. 
+The **DeepLearning_Assignment1_Housing.ipynb** notebook demonstrates how to build and train a neural network model to predict housing prices. It walks through the entire workflow, starting from data loading, exploration, and preprocessing, all the way through model design, training, and evaluation. The objective is to predict house prices based on various features such as square footage, number of bedrooms, location, and other relevant factors.
 
-Key points covered:
-- Handling missing data
-- Feature scaling and normalization
-- Building a deep learning model using Keras/TensorFlow
-- Model performance evaluation using loss functions like Mean Squared Error (MSE)
-- Visualization of training history and prediction results
+### Key Points Covered:
+- **Data Loading**: Importing the housing dataset and exploring its structure.
+- **Data Preprocessing**: Handling missing data, scaling features, and transforming categorical variables.
+- **Model Building**: Creating a deep neural network using Keras/TensorFlow.
+- **Model Training**: Training the model with training data, adjusting hyperparameters like learning rate and epochs.
+- **Model Evaluation**: Using Mean Squared Error (MSE) and Mean Absolute Error (MAE) to measure the performance of the model.
+- **Visualization**: Plotting training history (loss curves) and comparing predicted vs. actual housing prices.
 
 ## Notebook Overview
 
@@ -20,7 +21,7 @@ Key points covered:
 
 ### Key Sections:
 1. **Data Preprocessing**: Loading and cleaning the dataset, handling missing values, and feature scaling.
-2. **Model Building**: Creating a neural network model using Keras/TensorFlow (or relevant library).
+2. **Model Building**: Creating a neural network model using Keras/TensorFlow.
 3. **Model Training**: Training the model using the dataset and fine-tuning hyperparameters.
 4. **Evaluation**: Measuring model performance using relevant metrics (e.g., MSE, MAE) and visualizing the results.
 
@@ -39,6 +40,7 @@ You can install all required dependencies by running:
 
 ```bash
 pip install -r requirements.txt
+exit
 
 1. Clone the repository:
    ```bash
@@ -48,7 +50,7 @@ pip install -r requirements.txt
    ```bash
    cd DeepLearning-Housing-Prediction
 
-3. Open the notebook::
+3. Open the notebook:
    ```bash
    jupyter notebook DeepLearning_Assignment1_Housing.ipynb
 
